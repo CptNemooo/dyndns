@@ -1,4 +1,6 @@
 <IfModule mod_rewrite.c>
+  Options +FollowSymLinks
   RewriteEngine on
+  RewriteRule ^/nic/update updatedns.php [L]
   RewriteRule ^updateDNS updatedns.php [L]
 </IfModule>
